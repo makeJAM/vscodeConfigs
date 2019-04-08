@@ -1,0 +1,40 @@
+{
+    "env": {
+        "myDefaultIncludePath": [
+            "${workspaceFolder}",
+            "${workspaceFolder}/include",
+            "/usr/include/x86_64-linux-gnu/sys",
+            "/usr/lib/x86_64-linux-gnu/"
+
+        ],
+        "myCompilerPath": "/usr/bin/gcc"
+    },
+    "configurations": [
+        {
+            "name": "WSL",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/include/x86_64-linux-gnu/",
+                "/usr/lib/x86_64-linux-gnu/",
+                "/usr/bin/gcc"
+            ],
+            "browse": {},
+            "defines": [],
+            "cStandard": "c11"
+        },
+        {
+            "name": "clang",
+            "intelliSenseMode": "clang-x64",
+            "compilerPath": "C:\\Program Files\\LLVM\\bin\\clang.exe",
+            "includePath": [
+                "${workspaceFolder}"
+            ],
+            "browse": {"path":["C:\\Program Files\\LLVM\\bin\\"]},
+            "cStandard": "c11"
+        }
+ 
+    ],
+    "version": 4
+}
