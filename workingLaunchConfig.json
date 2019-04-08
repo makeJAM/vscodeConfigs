@@ -1,0 +1,44 @@
+
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(gdb) Bash on Windows Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "/mnt/c/Users/PATH TO PROGRAM",
+            "stopAtEntry": false,
+            "linux": {
+                "visualizerFile": "${workspaceFolder}/my.natviz"
+
+            },
+            "additionalSOLibSearchPath": "/usr/bin/",
+            "cwd": "/mnt/c/Users/PATH TO WORKING DIR",
+            "visualizerFile": "",
+            "internalConsoleOptions": "openOnSessionStart",
+            "avoidWindowsConsoleRedirection": false,
+            "filterStderr": false,
+            "filterStdout": true,
+            "environment": [],
+            "MIMode": "gdb",
+            "externalConsole": false,
+            
+            "pipeTransport": {
+                "debuggerPath": "/usr/bin/gdb",
+                "pipeEnv": "-exec",
+                "pipeProgram": "c:\\windows\\sysnative\\bash.exe",
+                "pipeArgs": ["-c"],
+                "pipeCwd": "c:\\windows\\sysnative\\"
+            },
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true 
+                }
+            ]
+        }
+    ]
+}
+
+
