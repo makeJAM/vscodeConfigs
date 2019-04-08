@@ -23,18 +23,7 @@
             "browse": {},
             "defines": [],
             "cStandard": "c11"
-        },
-        {
-            "name": "clang",
-            "intelliSenseMode": "clang-x64",
-            "compilerPath": "C:\\Program Files\\LLVM\\bin\\clang.exe",
-            "includePath": [
-                "${workspaceFolder}"
-            ],
-            "browse": {"path":["C:\\Program Files\\LLVM\\bin\\"]},
-            "cStandard": "c11"
         }
- 
     ],
     "version": 4
 }
